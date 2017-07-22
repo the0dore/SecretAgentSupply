@@ -13,7 +13,8 @@ h1, h2 {
 
 h1 {
     font-size: 2rem;
-    padding: 0.25rem 0;
+    padding: 1.5rem 0;
+    line-height: 2.5rem;
 }
 
 .container {
@@ -21,7 +22,7 @@ h1 {
     margin: 0 auto;
 }
 
-
+/*Header*/
 header {
     background-color: black;
 }
@@ -29,6 +30,7 @@ header {
 header .container {
     display: flex;
     align-items: center;
+    padding: 0.67rem 0;
 }
 
 header img {
@@ -37,30 +39,101 @@ header img {
     padding-right: 1rem;
 }
 
-header h2 {
-    padding: 0.66rem 0;
-}
-
-
+/*Banner Section*/
 .banner {
     background-image: url(../images/moto.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 25rem;
+    height: 25rem;
 }
 
 .headline {
     background-color: black;
     width: 20rem;
-    font-weight: bold;
-    padding: 2rem 3rem;
+    padding: 3.45rem 3rem 0.9rem;
     position: relative;
     top: 9rem;
+    font-weight: bold;
 }
 
- {
-    
+/* Navigation*/
+nav {
+    background-color: firebrick;
 }
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.93rem 0;
+}
+
+/*Products Section*/
+.products.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem auto;
+}
+
+.products .item {
+    width: 30%;
+}
+
+.item-img {
+    height: 9rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+}
+
+.item img {
+    width: 8rem;
+}
+
+.products p {
+    background-color: black;
+    text-align: center;
+    padding: 0.725rem 0;
+}
+
+/*Contact Info*/
+.contact.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .item {
+    width: 35%;
+}
+
+.contact p {
+    background-color: black;
+    padding: 1.2rem 2rem; 
+}
+
+p.numbers {
+    background-color: white;
+    color: black;
+    padding: 0.1rem;
+}
+
+/*Footer*/
+footer {
+    margin-top: 4.2rem;
+    background-color: black;
+    padding: 5.2rem 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+/*    height: 5rem;*/
+}
+
+
+
+
 
 
