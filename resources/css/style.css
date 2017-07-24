@@ -50,7 +50,7 @@ header img {
 
 .headline {
     background-color: black;
-    width: 20rem;
+    max-width: 20rem;
     padding: 3.45rem 3rem 0.9rem;
     position: relative;
     top: 9rem;
@@ -66,6 +66,9 @@ nav .container {
     display: flex;
     justify-content: space-between;
     padding: 0.93rem 0;
+}
+.tablet-menu {
+    display: none;
 }
 
 /*Products Section*/
@@ -130,6 +133,100 @@ footer .container {
     display: flex;
     align-items: center;
 /*    height: 5rem;*/
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    
+/* Banner */
+    h1 {
+        font-size: 1.75rem;
+        padding: 1.3rem 0;
+        line-height: 2.3rem;
+    }
+    .headline h2 {
+        font-size: 0.9rem;
+    }
+    .headline {
+        padding: 3rem 0 0.5rem 2.5rem;
+    }
+    
+/* Navigation */
+    nav .container {
+        justify-content: center;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    .tablet-menu {
+        display: block;
+    }
+    
+/* Products */
+    .products .item {
+        width: 47%;
+    }
+    .products .item:last-child {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 470px) {
+    
+    /* Header */
+    header .container {
+        justify-content: center;
+    }
+    header h2 {
+        display: none;
+    }
+    
+    /* Banner */
+    .banner {
+        height: 15rem;
+    }
+    .headline {
+        top: 10rem;
+        max-width: 100%;
+        padding: 1rem 2rem 0rem;
+    }
+    h1 {
+        font-size: 1rem;
+        padding: 0.56rem 0;
+        line-height: 1.3rem;
+    }
+    .headline h2 {
+        font-size: 0.77rem;
+    }
+    
+    /* Products */
+    .products .item {
+        width: 90%;
+        display: none;
+    }
+    .products .item:first-child {
+        display: block;
+    }
+    .products.container {
+        justify-content: center;
+    }
+    
+    /* Contact Info */
+    .contact.container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact .item {
+        width: 90%;
+        margin: 0.5rem;
+    }
+    
+    /*Footer*/
+    footer .container {
+        justify-content: center;
+    }
 }
 
 
